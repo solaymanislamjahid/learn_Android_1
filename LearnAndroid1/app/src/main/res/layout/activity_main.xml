@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wellcome_msg"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="#EA3800"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextHint"
+        android:layout_gravity="center"
+        android:textColorHint="#032CFD"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComContry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/autoCompliteHint"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#032CFD"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birth_year"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#032CFD"
+        />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/redioBtn_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textColor="#0324FB"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/redioBtn_female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/female"
+            android:textColor="#0324FB"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cheek_agree"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFD"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/login_icon"
+        android:text="@string/login"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#F80000"
+        />
+
+
+</LinearLayout>

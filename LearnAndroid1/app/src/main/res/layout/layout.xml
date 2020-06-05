@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/add_task_layout">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_task"
+        android:background="#EFB4B4"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#FA0000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_task_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:inputType="text"
+        />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+
+       >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv"
+           android:layout_centerHorizontal="true"
+           />
+
+       <Button
+           android:id="@+id/set_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="5dp"
+           android:layout_toStartOf="@id/tv"
+           android:background="#00E5FF"
+           android:text="@string/set_date" />
+
+       <Button
+           android:id="@+id/set_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="5dp"
+           android:layout_toEndOf="@id/tv"
+           android:background="#76FF03"
+           android:text="@string/set_time" />
+
+       <Button
+           android:id="@+id/set_task"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_marginEnd="10dp"
+           android:background="#FF3D00"
+           android:text="@string/done" />
+
+
+   </RelativeLayout>
+
+    <DatePicker
+        android:id="@+id/set_datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:startYear="2020"
+        android:background="#ffffff"
+        android:visibility="gone" />
+
+    <TimePicker
+        android:id="@+id/set_timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <ImageView
+        android:id="@+id/task_demo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/task"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>
